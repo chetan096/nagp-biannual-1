@@ -1,0 +1,10 @@
+<div *ngIf="cart">
+
+    <ul *ngFor="let product of cart">
+        <li>id:{{product.id}}&nbsp;quantity:{{product.quantity}}</li>
+        <button (click)="increaseQuantity(product.id)">+</button>&nbsp;
+        <button (click)="decreaseQuantity(product.id)">-</button>&nbsp;
+        <button (click)="deleteProduct(product.id)">Delete</button>
+    </ul>
+    <!-- cart-total: {{cartTotal}} -->
+</div>

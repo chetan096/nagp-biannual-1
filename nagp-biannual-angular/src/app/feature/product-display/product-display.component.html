@@ -1,0 +1,9 @@
+<div>
+    <div *ngFor="let product of products">
+        <p>{{product.name}}</p>
+        <p>{{product.description}}</p>
+        <p>{{product.price}}</p>
+        <button (click)="navigate(product.id)">Description</button>
+        <br><br>
+    </div>
+</div>
